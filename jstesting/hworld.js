@@ -14,7 +14,7 @@ const fs = require('fs');
 // });
 
 let datat = [];
-datat = fs.readFile('data.json', 'utf8', (err, data) => {
+datat = fs.readFile('MOCK_DATA.json', 'utf8', (err, data) => {
     console.log(data)   
     // return data;
     datat = data;
@@ -24,7 +24,7 @@ datat = fs.readFile('data.json', 'utf8', (err, data) => {
     console.log(typeof(dataa));
 
     dataa.forEach(element => {
-        console.log("element " + element.name);
+        console.log("element " + element.first_name);
     });
 
      });
